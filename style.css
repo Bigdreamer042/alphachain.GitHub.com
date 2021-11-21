@@ -316,16 +316,17 @@
 
          /* style sidenav class */
 
-     .sidenav {
-          position: relative;
-          right: 300px;
+     #sidenav {
+      position: relative;
+          
+      right: 300px;
 
-          height: 57%;
+      height: 57%;
 
           
-       width: 0;
+      width: 0;
 
-      position: fixed;
+      position: ;
 
       z-index: 1;
 
