@@ -314,9 +314,9 @@
 
      }
 
-         /* style sidenav ID */
+         /* style sidenav class */
 
-     #sidenav {
+     .sidenav {
 
       height: 57%;
           
