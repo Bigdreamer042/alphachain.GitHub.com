@@ -314,11 +314,11 @@
 
      }
 
-/* style sidenav class */
+         /* style sidenav class */
 
      .sidenav {
           position: relative;
-          left: 300px;
+          right: 300px;
 
           height: 57%;
 
