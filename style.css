@@ -322,9 +322,7 @@
           
       width: 0;
 
-      Position: relative;
-   
-      Left: 300px;
+      Position: fixed;
 
       z-index: 1;
 
