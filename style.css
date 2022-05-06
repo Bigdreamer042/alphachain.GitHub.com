@@ -1,815 +1,446 @@
-/* The body style */
-
-     body{
-
-       padding: 0;
-
-       margin: 0;
-
-     }
-
-     /* The title style */
-
-     .title{
-
-       color: #6a5acd;
-
-       text-size: 16px;
-
-       font-family: times new roman;
-
-       padding: 0;
-
-       bottom-margin: 0px;
-
-     }
-
-/* Style that will affect all <h3> tag */
-
-     
-
-     h3 {
-
-       color: #a52a2a;
-
-       text-align: center;
-
-       padding: 2px;
-
-       margin: 2px;
-
-     }
-
-/* style the class="exp" */
-
-     .exp{
-
-       text-align: center;
-
-       color: #6a5acd;
-
-       font-size: 30px;
-
-       font-family: times new roman;
-
-       text-shadow: 1px 1px darkgray;
-
-     }
-
-     /* style of coin */
-
-     .coin{
-
-      list-style-type: none;
-
-      padding: 10px;
-
-      text-align: center;
-
-      font-size: 25px;
-
-      text-transform: uppercase;
-
-      text-shadow: 1px 1px gray;
-
-      color: black;
-
-    }
-
-/* style div class="D" */
-
-    div.D{
-
-     text-align: center;
-
-     box-shadow: 3px 3px #f5f5f5;
-
-     padding: 30px;
-
-     margin: 10px;
-
-     background-color: #f5fffA;
-
-      color: #696969;
-
-      font-size: 18px;
-
-   }
-
-/* style login button */
-
-  .login{
-
-    background-color: #04aa6d;
-
-    color: #f1f1f1;
-
-    width: 40%;
-
-    padding: 14px;
-
-    border-radius: 5px;
-
-    box-shadow: 1px 1px #a9a9a9;
-
-    text-decoration: none;
-
-    text-align: center;
-
-    float: left;
-
-  }
-
-/* style register button*/
-
-.register{
-
-    background-color: #04aa6d;
-
-    color: #f1f1f1;
-
-    width: 40%;
-
-    padding: 14px;
-
-    border-radius: 5px;
-
-    box-shadow: 1px 1px #a9a9a9;
-
-    text-decoration: none;
-
-    text-align: center;
-
-    float: right;
-
-  }
-
-/* style class="intro" */
-
- .intro{
-
-    text-align: center;
-
-    font-family:courier new;
-
-    font-size: 30px;
-
-    text-shadow: 1px 1px gray;
-
-  }
-
-/* style class="three" */
-
-  .three{
-
-    text-align: center;
-
-    background-color: black;
-
-    color: white;
-
+*
+{  
+    padding: 0;
+    margin: 0;
+}
+.domen
+{
+    background-color: #0000CD;
+    color: #fff;
     padding: 20px;
-
-    margin: 3px;
-
-    border-radius: 5px;
-
-    font-size: 15px;
-
-    text-transform: uppercase;
-
-    text-shadow: 1px 1px gray;
-
-  }
-
-/* style class="pexp" */
-
-     .pexp{
-
-       text-align: center;
-
-       color: #2f4f4f;
-
-       font-size: 25px;
-
-       margin: 5px;
-
-       text-shadow: 1px 1px gray;
-
-     }
-
-/* style first img */
-
-     img{
-
-       position: absolute;
-
-       left: 0px;
-
-       top: 0px;
-
-       width: 100%;
-
-       height: 800px;
-
-       z-index: -1;
-
-       opacity: 0.3;
-
-     }
-
-/* style main */
-
-     .main{
-
-       background-color: #;
-
-       background-width: 100%;
-
-     }
-
-/* style all para class */
-
-     .para{
-
-       padding: 15px;
-
-       font-size: 20px;
-
-       text-decoration: none;
-
-       color: black;
-
-       width: 100%;
-
-     }
-
-/* style all A class */
-
-     .A{
-
-       font-size: 20px;
-
-       font-family: times new roman;
-
-       font-variant: small-caps;
-
-       color: darkred;
-
-       text-align: center;
-
-     }
-
-/* style all horizontal line */
-
-     hr{
-
-       color: #f8f8ff;
-
-       opacity: 1;
-
-     }
-
-@media screen and (max-height: 450px) {
-
-  .para a {font-size: 18px;}
-
+    text-align: center;
+    font-size: 50px;
+}
+/* menu bar style*/
+.menu-bar
+{
+    background:#0000CD;
+    text-align: center;
+}
+.menu-bar ul
+{
+    display: inline-flex;
+    list-style: none;
+    color: #fff;
+}
+.menu-bar ul li
+{
+    width: 120px;
+    margin: 15px;
+    padding: 15px;
+}
+.menu-bar ul li a
+{
+    text-decoration: none;
+    color: #fff;
+}
+.active, .menu-bar ul li:hover
+{
+    background: #0000FF;
+    border-radius: 3px;
+}
+.menu-bar .fa
+{
+    margin-right: 8px;
 }
 
+.sub-menu-1
+{z-index: 1;
+    display: none;
+}
+.menu-bar ul li:hover .sub-menu-1
+{
+    display: block;
+    position: absolute;
+    background-color: #0000CD;
+    margin-top: 15px;
+    margin-left: -15px;
+}
+.menu-bar ul li:hover .sub-menu-1 ul
+{
+display: block;
+margin: 10px;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li
+{
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px solid gray;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li:last-child
+{
+    border-bottom: none;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li a:hover
+{
+    color: aqua;
+}
+.fa-angle-right
+{
+    float: right;
+}
+.sub-menu-2
+{
+z-index: 1;
+ display: none;
+}
+.hover-me:hover .sub-menu-2
+{
+    position: absolute;
+    display: block;
+    margin-top: 40px;
+    margin-left: 140px;
+    background: #0000CD;
+}
+/*end of menu bar style*/
+.btn
+{
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin: 15px; 
+    background-color: green;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 30px;
+   
+}
+.btn:hover{background-color: #3f1f1f;}
+
+.we
+{
+text-align: center;
+background-color: #0000CD;
+color: #fff;
+}
+.welcome
+{
+  text-align: center;
+  padding: 15px;
+  margin: 50px;
+  background-color: #351212;
+  color: #fff;
+  width: 100%;
+  font-size: 30px;
+  border-radius: 10px;
+}
+/* coin introduction*/
+.introcoin 
+{
+ text-align: center;
+ font-size: 50px;
+ color: #000;
+ padding: 20px;
+ margin: 20px;
+}
+.img-wallet-buy
+{
+  float: right;
+  margin-right: 200px;
+  
+}
+/* coin style*/
+.coin
+{
+  margin-left: 100px; 
+  list-style: none;
+}
+/* coin style*/
+ .coin li 
+ {
+  text-align: center;
+  font-size: 25px;
+  background: #4343ce;
+  color: #fff;
+  width: 350px;
+  margin: 30px;
+  padding: 25px;
+  border-radius: 10px;
+ }
+ .ABOUT
+ {
+   color: #0000CD;
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   font-size: 50px;
+   float: right !important;
+   margin: 0;
+ }
+ .p-about
+ {
+   float: right;
+   font-size: 30px;
+   margin: 0;
+ }
+ .get-started-now
+ {
+   color: #fff;
+   float: right;
+   border: 1px solid blue;
+   border-radius: 5px;
+   position: relative;
+   left: 700px;
+   box-shadow: 3px 3px 3px #198cc2;
+   font-size: 20px;
+   text-align: center;
+   background-color: #0000FF; 
+   padding: 20px;
+   margin: 15px;margin-top: 50px;
+ }
+ .get-started-now:hover
+ {
+   background-color: #0000CD;
+ }
+ .exchange-fiat-currencies.png
+ {
+   float: right;
+   margin: 0;
+
+ }
+ .AUTOMATED
+ {
+   display: flex;
+   width: 300px;
+   height: 200px;
+   float: right;
+   text-align: justify;
+   border-radius: 5px;
+   box-shadow: 20px 20px 20px #198cc2;
+ }
+ .EASY
+ {
+  display: flex;
+  width: 300px;
+  height: 200px;
+  float: right;
+  text-align: justify;
+  border-radius: 5px;
+  box-shadow: 20px 20px 20px #198cc2;
+ }
+/* Style that will affect all <h3> tag */
+  h3 {
+
+    color: #351212;
+    text-align: center;
+    padding: 2px;
+    margin: 25px;
+  }
+  /*style for all h4*/
+  h4{
+    color: #881612;
+  }
+  /*investment plans*/
+#plan
+{
+  display: flex;
+  align-content: center;
+  justify-content: center;padding: 20px;
+}
+#plan div
+{
+  align-items: center;
+  margin: 10px;
+  width: 100%;
+}
+/*investment plan get started*/
+.get-started
+{
+  text-align: center;
+  background-color: #008000;
+  border-radius: 20px;
+  text-decoration: none;
+  padding: 10px;
+  color: #fff;
+}
+ 
+/* style div class="D" */
+
+.D
+{
+  text-align: center;
+  box-shadow: 3px 3px #f5f5f5;
+  padding: 30px;
+  margin: 25px;
+  background-color: #f5fffA;
+  color: #696969;
+  font-size: 18px;
+}
 /* style <a> in para class */
 
-     .para a{
+  .para a{
+    padding: 6px 8px 6px 16px;
+    margin-left: 30px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #778899;
+    display: block;
+    position: relative;
+    right: 40px;
+  }
+ .para a:hover
+ {
+   color: blue;
 
-       padding: 6px 8px 6px 16px;
-
-       text-decoration: none;
-
-       font-size: 20px;
-
-       color: #000;
-
-       display: block;
-
-       position: relative;
-
-       right: 40px;
-
-     }
-
-    .para a:hover{
-
-      color: #0000ff;
-
-    }
+ }
 
 /* style all <i> tag */
 
-     .para a i{
-
-       color: black;
-
-       left: 0;
-
-       font-size: 20px;
-
-     }
-
-         /* style sidenav class */
-
-     .sidenav {
-
-      height: 57%;
-          
-      width: 0;
-
-      Position: fixed;
-
-      z-index: 1;
-
-      top: 0;
-
-      right: 0;
-
-      background-color: #2f4f4f;
-
-      overflow-x: hidden;
-
-      transition: 0.5s;
-
-      padding-top: 60px;
-
-     }
-
-     .sidenav a {
-
-       padding: 10px 0px 10px 0px;
-
-       text-decoration: none;
-
-       font-size: 25px;
-
-       color: #818181;
-
-       display: block;
-
-       transition: 0.3s;
-
-       text-align: center;
-
-       }
-
-       .sidenav a:hover {
-
-         color: #f1f1f1;
-
-         background: #778899;
-
-        }
-
-        
-
-       .sidenav .closebtn {
-
-        position: absolute;
-
-        top: 0;
-
-        left: 25px;
-
-        font-size: 36px;
-
-        margin-left: 170px;
-
-        }
-
-        .navspan{
-
-          position: relative;
-
-          left: 320px;
-
-          color: lightgray;
-
-        }
-
-        
-
-        @media screen and (max-height: 450px){
-
-          .sidenav {padding-top: 15px;}
-
-        .sidenav a {font-size: 18px;}
-
-        }
-
-/* sign up form */
-
-* {box-sizing: border-box}
-
-/* Full-width input fields */
-
-  input[type=text], input[type=password] {
-
-  width: 100%;
-
-  padding: 15px;
-
-  margin: 5px 0 22px 0;
-
-  display: inline-block;
-
-  border: none;
-
-  background: #f1f1f1;
-
-}
-
-/* Add a background color when the inputs get focus */
-
-input[type=text]:focus, input[type=password]:focus {
-
-  background-color: #ddd;
-
-  outline: none;
-
-}
-
-/* Set a style for all buttons */
-
-button {
-
-  background-color: #04AA6D;
-
-  color: white;
-
-  padding: 14px 20px;
-
-  margin: 8px 0;
-
-  border: none;
-
-  cursor: pointer;
-
-  width: 50%;
-
-  opacity: 0.9;
-
-}
-
-button:hover {
-
-  opacity:1;
-
-}
-
-/* Extra styles for the cancel button */
-
-.cancelbtn {
-
-  padding: 14px 20px;
-
-  background-color: #f44336;
-
-}
-
-/* Float cancel and signup buttons and add an equal width */
-
-.cancelbtn, .signupbtn {
-
-  float: left;
-
-  width: 50%;
-
-}
-
-/* Add padding to container elements */
-
-.container {
-
-  padding: 16px;
-
-}
-
-/* The Modal (background) */
-
-.modal {
-
-  display: none; /* Hidden by default */
-
-  position: fixed; /* Stay in place */
-
-  z-index: 1; /* Sit on top */
-
-  left: 0;
-
-  top: 0;
-
-  width: 100%; /* Full width */
-
-  height: 100%; /* Full height */
-
-  overflow: auto; /* Enable scroll if needed */
-
-  background-color: #474e5d;
-
-  padding-top: 50px;
-
-}
-
-/* Modal Content/Box */
-
-.modal-content {
-
-  background-color: #fefefe;
-
-  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
-
-  border: 1px solid #888;
-
-  width: 80%; /* Could be more or less, depending on screen size */
-
-}
-
-/* Style the horizontal ruler */
-
-hr {
-
-  border: 1px solid #f1f1f1;
-
-  margin-bottom: 25px;
-
-}
-
-/* The Close Button (x) */
-
-.close {
-
-  position: absolute;
-
-  right: 35px;
-
-  top: 15px;
-
-  font-size: 40px;
-
-  font-weight: bold;
-
-  color: #f1f1f1;
-
-}
-
-.close:hover,
-
-.close:focus {
-
-  color: #f44336;
-
-  cursor: pointer;
-
-}
-
-/* Clear floats */
-
-.clearfix::after {
-
-  content: "";
-
-  clear: both;
-
-  display: table;
-
-}
-
-/* Change styles for cancel button and signup button on extra small screens */
-
-@media screen and (max-width: 300px) {
-
-  .cancelbtn, .signupbtn {
-
-    width: 100%;
-
+  .para a i
+  {
+    color: #fff;
+    font-size: 20px;
+    margin: 5px;
   }
-
+/* silver plan styles*/
+.silver
+{
+border: 1px solid black;
+width: 25%;
+background: Silver;
+padding: 10px;
+margin: 5px;
+text-align: center;
 }
 
-.investment{
-
-  text-align: center;
-
-  font-size: 30px;
-
-  color: #6a5acd;
-
-  border-radius: 5px;
-
-  text-shadow: 2px 2px lightgray;
-
-  font-family: times new roman;
-
+.silverth
+{
+width: 100%;
+padding: 20px;
+border: 1px solid silver;
+background: silver;
+text-align: center;
+font-size: 20px;
 }
 
-#silver-plan{
-
-  border: 1px solid black;
-
-  width: 100%;
-
-  background: Silver;
-
-  padding: 10px;
-
-  margin: 5px;
-
+.silvertd
+{
+border-radius: 10px;
+padding: 15px;
+background: #dcdcdc;
+text-align: left
+}
+/* gold plan style*/
+.gold
+{
+border: 1px solid black;
+width: 25%;
+background: goldenrod;
+padding: 10px!important;
+margin: 5px!important;
+text-align: center;
 }
 
-.silverth{
-
-  width: 100%;
-
-  padding: 20px;
-
-  border: 1px solid silver;
-
-  background: silver;
-
-  text-align: center;
-
-  font-size: 20px;
-
+.goldth
+{
+width: 100%;
+padding: 20px;
+border: 1px solid goldenrod;
+background: goldenrod;
+text-align: center;
+font-size: 20px;
 }
 
-.silvertd{
-
-  border-radius: 10px;
-
-  padding: 15px;
-
-  background: #dcdcdc;
-
+.goldtd
+{
+border-radius: 10px;
+padding: 15px;
+background: #ffffe0;
+text-align: left;
 }
-
+/* diamond plan style*/
+.diamond
+{
+border: 1px solid black;
+width: 25%;
+background: midnightblue;
+padding: 10px;
+margin: 5px;
+text-align: center;
 }
-
-#gold-plan{
-
-  border: 1px solid black;
-
-  width: 100%;
-
-  background: goldenrod;
-
-  padding: 10px!important;
-
-  margin: 5px!important;
-
+.diamondth
+{
+width: 100%;
+padding: 20px;
+border: 1px solid midnightblue;
+background: midnightblue;
+text-align: center;
+font-size: 20px;
+color: white;
 }
-
-.goldth{
-
-  width: 100%;
-
-  padding: 20px;
-
-  border: 1px solid goldenrod;
-
-  background: goldenrod;
-
-  text-align: center;
-
-  font-size: 20px;
-
-}
-
-.goldtd{
-
-  border-radius: 10px;
-
-  padding: 15px;
-
-  background: #ffffe0;
-
-}
-
-#Diamond-plan{
-
-  border: 1px solid black;
-
-  width: 100%;
-
-  background: midnightblue;
-
-  padding: 10px;
-
-  margin: 5px;
-
-}
-
-.diamondth{
-
-  width: 100%;
-
-  padding: 20px;
-
-  border: 1px solid midnightblue;
-
-  background: midnightblue;
-
-  text-align: center;
-
-  font-size: 20px;
-
-  color: white;
-
-}
-
 .diamondtd{
-
-  border:1px solid black;
-
-  border-radius: 10px;
-
-  padding: 15px;
-
-  background: #e6e6fa;
-
+border:1px solid black;
+border-radius: 10px;
+padding: 15px;
+background: #e6e6fa;
+text-align: left;
 }
-
-.diamondtd i{
-
-}
-
-.get-started{
-
-    background-color: #04aa6d;
-
-    color: #f1f1f1;
-
-    padding: 14px;
-
-    border-radius: 10px;
-
-    text-decoration: none;
-
-    text-align: center!important;
-
-    width: 100%!important;
-
-   float: right;
-
-  font-size: 20px;
-
-}
-
-.fa{
-
-  padding: 10px;
-
-  margin: 12px;
-
-  font-size: 10px;
-
-  width: 30px;
-
-  text-align: center;
-
-  text-decoration: none;
-
-  border-radius: 50%;
-
-  position: relative;
-
-  left: 70px;
-
-}
-
+/* social media link style*/
 .fa-facebook{
-
-  background: #3b5998;
-
-  color: white;
-
-}
-
+background: #3b5998;
+color: white;
+margin: 25px;
+padding: 15px;
+text-decoration: none;
+border-radius: 50%;
+}.fa-facebook:hover{background: #879df5;}
 .fa-twitter{
-
-  background: #55acee;
-
-  color: white;
-
-}
-
+background: #55acee;
+color: white;
+margin: 25px;
+padding: 15px;
+text-decoration: none;
+border-radius: 50%;
+}.fa-twitter:hover{background: #475075;}
 .fa-linkedin{
-
-  background: #007bb5;
-
-  color: white;
-
-}
-
+background: #198cc2;
+color: white;
+margin: 25px;
+padding: 15px;
+text-decoration: none;
+border-radius: 50%;
+}.fa-linkedin:hover{background: #475075;}
 .fa-instagram{
-
-  background: #125688;
-
-  color: white;
-
+background: #7c2826;
+color: rgb(245, 241, 241);
+margin: 25px;
+padding: 15px;
+text-decoration: none;
+border-radius: 50%;
+}.fa-instagram:hover{background: #85504e;}
+.media
+{
+    text-align: center;
+}
+#footer
+{
+  background-color: #a1a1fd;
+  color: #fff ;
+}
+/* footer style*/
+.footer-head
+{
+  text-align: center;
+  text-decoration: none;
+  font-family: courier new;
+  padding-top: 0;
+}
+.copy
+{
+  text-align: center; 
+  font-family: courier new;
+}
+.nav-link
+{
+  width: 100%; 
+  font-variant: uppercase;
+  font-size: 20px; 
+  text-align: center;
+  margin: 20px;
+}
+.btn .fa 
+ {
+    margin: 8px;
 }
